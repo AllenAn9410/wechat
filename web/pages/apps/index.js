@@ -9,6 +9,15 @@ Page({
   },
   gotoOilCostPage : function () {
     console.log('gotoOilCostPage')
+    wx.navigateTo({
+      url : "/pages/apps/components/oilCost",
+      success: function() {
+        console.log("navigate to oilCost success")
+      },
+      fail: function() {
+        console.log("navigate to oilCost fail")
+      }
+    })
   },
   gotoGravelPage : function() {
     console.log('gotoGravelPage')

@@ -18,7 +18,7 @@
     </block>
   </view>
   <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+    <!-- <text class="user-motto">{{motto}}</text> -->
   </view>
   <button class="goOnBtn" bindtap="goOn">go on</button>
 </view>

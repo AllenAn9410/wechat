@@ -1,0 +1,18 @@
+/* pages/demo-01/index.wxss */
+.oilCostDev {
+  width: 100%;
+  height: 200px;
+}
+.oilCostBtn {
+  height: 200px;
+  margin: 25px 25px 20px 20px;
+  padding-top: 80px;
+}
+.gravelDiv {
+  width: 100%;
+}
+.gravelBtn {
+  height: 200px;
+  margin: 25px 25px 20px 20px;
+  padding-top: 80px;
+}

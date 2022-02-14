@@ -4,6 +4,6 @@
     <button class="oilCostBtn" bindtap="gotoOilCostPage">Oil cost</button>
   </div>
   <div class='gravelDiv'>
-    <button class="gravelPage" bindtap="gotoGravelPage">Gravel</button>
+    <button class="gravelBtn" bindtap="gotoGravelPage">Gravel</button>
   </div>
 </view>

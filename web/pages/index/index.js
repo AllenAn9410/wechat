@@ -48,7 +48,7 @@ Page({
   goOn : function() {
     console.log("go on click")
     wx.navigateTo({
-      url : "/pages/demo-01/index",
+      url : "/pages/apps/index",
       success: function() {
         console.log("navigate to demo-01 success")
       },

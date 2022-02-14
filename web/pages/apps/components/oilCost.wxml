@@ -1,0 +1,6 @@
+<!--pages/apps/components/oilCost.wxml-->
+<page>
+  <div>
+		<button>add info</button>
+  </div>
+</page>
