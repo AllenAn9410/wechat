@@ -44,5 +44,17 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  }, 
+  goOn : function() {
+    console.log("go on click")
+    wx.navigateTo({
+      url : "/pages/demo-01/index",
+      success: function() {
+        console.log("navigate to demo-01 success")
+      },
+      fail: function() {
+        console.log("navigate to demo-01 fail")
+      }
+    })
   }
 })

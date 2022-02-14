@@ -1,0 +1,12 @@
+/* pages/demo-01/index.wxss */
+.oilCostDev {
+  width: 100%;
+}
+.oilCostBtn {
+  width: 85%;
+  height: 200px;
+}
+.gravelPage {
+  width: 600px;
+  height: 200px;
+}
