@@ -1,1 +1,11 @@
 /* pages/apps/components/oilCost.wxss */
+page {
+  background-color: #DCDCDC	;
+  padding-top: 10px;
+}
+.addBtn {
+  width: 92%;
+  position: fixed;
+  bottom: 0;
+  margin: 4%;
+}

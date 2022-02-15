@@ -1,6 +1,12 @@
 <!--pages/apps/components/oilCost.wxml-->
 <page>
-  <div>
-		<button>add info</button>
+  <div class="showContentDiv">
+    <van-cell-group inset >
+      <van-cell title="总共里数" value="{{showContent.totalKm}}" label="单位公里" />
+      <van-cell title="用油量" value="{{showContent.totalOilConsumption}}" label="单位升" />
+      <van-cell title="油耗" value="{{showContent.oilConsumption}}" label="百公里油耗" />
+      <van-cell title="花费" value="{{showContent.cost}}" label="RMB" />
+    </van-cell-group>
   </div>
+  <van-button class="addBtn" type="primary" bindtap="add" size="large">新增</van-button>
 </page>

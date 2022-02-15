@@ -5,7 +5,12 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+      showContent:{
+          totalKm: 1000,
+          totalOilConsumption: 111,
+          cost:999,
+          oilConsumption: 9
+      }
     },
 
     /**
@@ -62,5 +67,8 @@ Page({
      */
     onShareAppMessage: function () {
 
-    }
+    },
+    add: function () {
+        console.log('add')
+    } 
 })

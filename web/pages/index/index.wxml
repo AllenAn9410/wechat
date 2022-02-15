@@ -20,5 +20,5 @@
   <view class="usermotto">
     <!-- <text class="user-motto">{{motto}}</text> -->
   </view>
-  <button class="goOnBtn" bindtap="goOn">go on</button>
+  <van-button round class="goOnBtn" bindtap="goOn" type="primary" block>go on</van-button>
 </view>
