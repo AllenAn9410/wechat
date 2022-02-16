@@ -23,3 +23,6 @@
   bottom: 0;
   margin: 4%;
 }
+van-cel-group {
+  padding-top: 5px;
+}

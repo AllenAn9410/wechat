@@ -9,3 +9,6 @@ page {
   bottom: 0;
   margin: 4%;
 }
+.historyAddList {
+  padding-top: 10px;
+}
