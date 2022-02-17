@@ -1,5 +1,6 @@
 package cn.anx.serve.controller;
 
+import cn.anx.serve.entity.ServeResponse;
 import cn.anx.serve.entity.UserInfo;
 import cn.anx.serve.service.IUserInfoService;
 import com.github.pagehelper.PageInfo;
@@ -24,17 +25,17 @@ public class UserController {
     IUserInfoService userInfoService;
 
     @GetMapping("/list")
-    public List<UserInfo> listUsers() {
+    public ServeResponse<List<UserInfo>> listUsers() {
         List<UserInfo> userInfos = userInfoService.listUsers();
-        return userInfos;
+        return ServeResponse.success(userInfos);
     }
 
     @GetMapping("/page")
-    public List<UserInfo> pageUsers(@RequestParam(name = "pageSize", defaultValue = "10") Integer pageSize,
+    public ServeResponse<List<UserInfo>> pageUsers(@RequestParam(name = "pageSize", defaultValue = "10") Integer pageSize,
                                     @RequestParam(name = "pageNo", defaultValue = "1") Integer pageNo) {
         PageInfo<UserInfo> pageUser = userInfoService.pageUsers(pageSize, pageNo);
         List<UserInfo> list = pageUser.getList();
-        return list;
+        return ServeResponse.success(list);
     }
 
 }
