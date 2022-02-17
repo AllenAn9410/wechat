@@ -1,4 +1,4 @@
-package cn.anx.serve.generator;
+package cn.ax.code.generator.utils;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
@@ -55,7 +55,6 @@ public class GeneratorConfig {
     public void initConfig(){
         // 代码生成器
         CustomAutoGenerator mpg = new CustomAutoGenerator();
-
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
         String parentPath= System.getProperty("user.dir") + basePath;

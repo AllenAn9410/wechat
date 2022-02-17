@@ -1,4 +1,4 @@
-package cn.anx.serve.generator;
+package cn.ax.code.generator.utils;
 
 
 import com.baomidou.mybatisplus.generator.config.po.TableField;

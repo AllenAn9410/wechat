@@ -3,6 +3,8 @@ package cn.anx.serve.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
+
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -16,6 +18,7 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
+@TableName("user_info")
 public class UserInfo implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -25,7 +28,7 @@ public class UserInfo implements Serializable {
 
     private String userName;
 
-    private String desc;
+    private String userCode;
 
 
 }

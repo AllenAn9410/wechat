@@ -4,6 +4,7 @@ import cn.anx.serve.entity.UserInfo;
 import cn.anx.serve.entity.join.UserInfoJoinServices;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
@@ -15,6 +16,7 @@ import java.util.List;
  * @author anxin
  * @since 2022-02-16
  */
+@Mapper
 public interface UserInfoMapper extends BaseMapper<UserInfo> {
   /**
    * 查询扩展

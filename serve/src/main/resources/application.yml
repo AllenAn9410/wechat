@@ -2,7 +2,7 @@ spring:
   application:
     name: mini-program-serve
   profiles:
-    active: ${profiles.active}
+    active: @profiles.active@
 server:
   port: 9610
 
