@@ -1,6 +1,6 @@
-package cn.anx.serve.service;
+package cn.anx.serve.service.user;
 
-import cn.anx.serve.entity.UserInfo;
+import cn.anx.serve.entity.user.UserInfo;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.github.pagehelper.PageInfo;
 

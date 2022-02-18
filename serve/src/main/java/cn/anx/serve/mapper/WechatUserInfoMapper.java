@@ -1,28 +1,26 @@
 package cn.anx.serve.mapper;
 
-import cn.anx.serve.entity.user.UserInfo;
+import cn.anx.serve.entity.wechat.WechatUserInfo;
 import cn.anx.serve.entity.wechat.join.WechatUserInfoJoinServices;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 /**
  * <p>
- * 用户信息 Mapper 接口
+ * 微信小程序用户信息 Mapper 接口
  * </p>
  *
  * @author anxin
- * @since 2022-02-16
+ * @since 2022-02-18
  */
-@Mapper
-public interface UserInfoMapper extends BaseMapper<UserInfo> {
+public interface WechatUserInfoMapper extends BaseMapper<WechatUserInfo> {
   /**
    * 查询扩展
    *
    * @param wrapper 动态参数
-   * @return List<UserInfoJoinServices>
+   * @return List<WechatUserInfoJoinServices>
    * */
-  List<WechatUserInfoJoinServices> selectUserInfoJoinServices(@Param("ew") Wrapper<UserInfo> wrapper);
+  List<WechatUserInfoJoinServices> selectWechatUserInfoJoinServices(@Param("ew") Wrapper<WechatUserInfo> wrapper);
 }

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.microvideo.zhdd.basic.database.mapper.WechatUserInfoMapper">
+
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="cn.microvideo.zhdd.basic.database.entity.WechatUserInfo">
+                    <id column="id" property="id" />
+                    <result column="nick_name" property="nickName" />
+                    <result column="open_id" property="openId" />
+                    <result column="last_login_time" property="lastLoginTime" />
+                    <result column="create_time" property="createTime" />
+                    <result column="update_time" property="updateTime" />
+        </resultMap>
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultJoinMap" type="cn.microvideo.zhdd.basic.database.entity.join.WechatUserInfoJoinServices">
+                <id column="id" property="id" />
+
+
+                <result column="nick_name" property="nickName" />
+                <result column="open_id" property="openId" />
+                <result column="last_login_time" property="lastLoginTime" />
+                <result column="create_time" property="createTime" />
+                <result column="update_time" property="updateTime" />
+
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="BaseColumnList">
+                `wechat_user_info`.id,
+                `wechat_user_info`.nick_name,
+                `wechat_user_info`.open_id,
+                `wechat_user_info`.last_login_time,
+                `wechat_user_info`.create_time,
+                `wechat_user_info`.update_time
+        </sql>
+
+        <!-- 通用查询结果列 -->
+        <sql id="BaseColumnListJoin">
+                `wechat_user_info`.id,
+                `wechat_user_info`.nick_name,
+                `wechat_user_info`.open_id,
+                `wechat_user_info`.last_login_time,
+                `wechat_user_info`.create_time,
+                `wechat_user_info`.update_time
+        </sql>
+
+
+    <select id="selectWechatUserInfoJoinServices" resultMap="BaseResultJoinMap">
+        select
+            <include refid="BaseColumnList" />
+        from  wechat_user_info `wechat_user_info`
+        <where>
+            ${ew.sqlSegment}
+        </where>
+    </select>
+
+
+</mapper>

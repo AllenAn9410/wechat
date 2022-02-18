@@ -1,4 +1,4 @@
-package cn.anx.serve.entity;
+package cn.anx.serve.entity.user;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;

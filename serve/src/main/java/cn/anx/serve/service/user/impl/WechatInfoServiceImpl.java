@@ -1,8 +1,8 @@
-package cn.anx.serve.service.impl;
+package cn.anx.serve.service.user.impl;
 
 import cn.anx.serve.constant.WechatConstant;
 import cn.anx.serve.entity.wechat.OpenIdResponse;
-import cn.anx.serve.service.IWechatInfoService;
+import cn.anx.serve.service.wechat.IWechatInfoService;
 import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,8 +10,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
-
-import java.util.Map;
 
 /**
  * @author anx

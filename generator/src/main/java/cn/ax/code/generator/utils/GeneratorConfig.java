@@ -167,7 +167,7 @@ public class GeneratorConfig {
         // 写于父类中的公共字段
 //        strategy.setSuperEntityColumns("id");
 //        strategy.setInclude(scanner("表名，多个英文逗号分割").split(","));
-        strategy.setLikeTable(new LikeTable("user_info"));
+        strategy.setLikeTable(new LikeTable("wechat_user_info"));
         strategy.setControllerMappingHyphenStyle(true);
         mpg.setStrategy(strategy);
         mpg.execute(tableRef);
@@ -185,7 +185,7 @@ public class GeneratorConfig {
         s.setUrl("jdbc:mysql://47.118.194.10:3306/wechat_mini_program");
         s.setBasePath("/cn/anx/serve/domain");
         s.setUsername("anx");
-        s.setPassword("Ax@12345");
+        s.setPassword("Ax421125@#$%^");
         s.initConfig();
     }
 

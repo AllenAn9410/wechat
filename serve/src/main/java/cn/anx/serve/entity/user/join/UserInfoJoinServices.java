@@ -1,6 +1,6 @@
-package cn.anx.serve.entity.join;
+package cn.anx.serve.entity.user.join;
 
-import cn.anx.serve.entity.UserInfo;
+import cn.anx.serve.entity.user.UserInfo;
 import lombok.Data;
 
 /**

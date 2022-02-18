@@ -1,8 +1,8 @@
-package cn.anx.serve.service.impl;
+package cn.anx.serve.service.user.impl;
 
-import cn.anx.serve.entity.UserInfo;
+import cn.anx.serve.entity.user.UserInfo;
 import cn.anx.serve.mapper.UserInfoMapper;
-import cn.anx.serve.service.IUserInfoService;
+import cn.anx.serve.service.user.IUserInfoService;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.github.pagehelper.PageHelper;

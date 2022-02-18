@@ -1,6 +1,6 @@
 package cn.anx.serve.controller;
 
-import cn.anx.serve.entity.ServeResponse;
+import cn.anx.serve.entity.ServerResponse;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 public class TestController {
 
     @GetMapping("/ping")
-    public ServeResponse<String> testPing(HttpServletRequest request) {
-        return ServeResponse.success("ping successfully");
+    public ServerResponse<String> testPing(HttpServletRequest request) {
+        return ServerResponse.success("ping successfully");
     }
 }

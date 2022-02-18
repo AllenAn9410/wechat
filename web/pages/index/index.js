@@ -58,7 +58,17 @@ Page({
   }, 
   goOn : function() {
     console.log("go on click")
-    this.getOpenId()
+    wx.getUserProfile({
+      desc: '展示用户信息', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
+      success: (res) => {
+        console.log(res)
+        this.getOpenId()
+        this.setData({
+          userInfo: res.userInfo,
+          hasUserInfo: true
+        })
+      }
+    })
     console.log(this.openId)
     wx.navigateTo({
       url : "/pages/apps/index",

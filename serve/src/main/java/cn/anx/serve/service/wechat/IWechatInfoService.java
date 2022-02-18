@@ -1,4 +1,4 @@
-package cn.anx.serve.service;
+package cn.anx.serve.service.wechat;
 
 /**
  * 微信信息服务类

@@ -1,8 +1,8 @@
 package cn.anx.serve.controller;
 
-import cn.anx.serve.entity.ServeResponse;
-import cn.anx.serve.entity.UserInfo;
-import cn.anx.serve.service.IUserInfoService;
+import cn.anx.serve.entity.ServerResponse;
+import cn.anx.serve.entity.user.UserInfo;
+import cn.anx.serve.service.user.IUserInfoService;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,17 +24,17 @@ public class UserController {
     IUserInfoService userInfoService;
 
     @GetMapping("/list")
-    public ServeResponse<List<UserInfo>> listUsers() {
+    public ServerResponse<List<UserInfo>> listUsers() {
         List<UserInfo> userInfos = userInfoService.listUsers();
-        return ServeResponse.success(userInfos);
+        return ServerResponse.success(userInfos);
     }
 
     @GetMapping("/page")
-    public ServeResponse<List<UserInfo>> pageUsers(@RequestParam(name = "pageSize", defaultValue = "10") Integer pageSize,
-                                    @RequestParam(name = "pageNo", defaultValue = "1") Integer pageNo) {
+    public ServerResponse<List<UserInfo>> pageUsers(@RequestParam(name = "pageSize", defaultValue = "10") Integer pageSize,
+                                                    @RequestParam(name = "pageNo", defaultValue = "1") Integer pageNo) {
         PageInfo<UserInfo> pageUser = userInfoService.pageUsers(pageSize, pageNo);
         List<UserInfo> list = pageUser.getList();
-        return ServeResponse.success(list);
+        return ServerResponse.success(list);
     }
 
 }
