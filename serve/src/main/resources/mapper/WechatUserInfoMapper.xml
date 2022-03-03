@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.microvideo.zhdd.basic.database.mapper.WechatUserInfoMapper">
+<mapper namespace="cn.anx.serve.mapper.WechatUserInfoMapper">
 
 
         <!-- 通用查询映射结果 -->
-        <resultMap id="BaseResultMap" type="cn.microvideo.zhdd.basic.database.entity.WechatUserInfo">
+        <resultMap id="BaseResultMap" type="cn.anx.serve.entity.wechat.WechatUserInfo">
                     <id column="id" property="id" />
                     <result column="nick_name" property="nickName" />
                     <result column="open_id" property="openId" />
@@ -14,7 +14,7 @@
         </resultMap>
 
         <!-- 通用查询映射结果 -->
-        <resultMap id="BaseResultJoinMap" type="cn.microvideo.zhdd.basic.database.entity.join.WechatUserInfoJoinServices">
+        <resultMap id="BaseResultJoinMap" type="cn.anx.serve.entity.wechat.join.WechatUserInfoJoinServices">
                 <id column="id" property="id" />
 
 

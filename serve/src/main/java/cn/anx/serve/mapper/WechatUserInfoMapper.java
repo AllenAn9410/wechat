@@ -4,6 +4,7 @@ import cn.anx.serve.entity.wechat.WechatUserInfo;
 import cn.anx.serve.entity.wechat.join.WechatUserInfoJoinServices;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
@@ -15,6 +16,7 @@ import java.util.List;
  * @author anxin
  * @since 2022-02-18
  */
+@Mapper
 public interface WechatUserInfoMapper extends BaseMapper<WechatUserInfo> {
   /**
    * 查询扩展
