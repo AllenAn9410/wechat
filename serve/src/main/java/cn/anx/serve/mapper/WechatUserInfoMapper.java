@@ -2,10 +2,11 @@ package cn.anx.serve.mapper;
 
 import cn.anx.serve.entity.wechat.WechatUserInfo;
 import cn.anx.serve.entity.wechat.join.WechatUserInfoJoinServices;
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 /**

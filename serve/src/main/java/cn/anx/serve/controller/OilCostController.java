@@ -1,9 +1,7 @@
 package cn.anx.serve.controller;
 
 import cn.anx.serve.entity.ServerResponse;
-import cn.anx.serve.entity.user.UserInfo;
 import cn.anx.serve.entity.wechat.OilCost;
-import cn.anx.serve.service.user.IUserInfoService;
 import cn.anx.serve.service.wechat.IOilCostService;
 import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
@@ -16,8 +14,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.swing.text.DateFormatter;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -55,7 +51,7 @@ public class OilCostController {
 
     @PutMapping
     public ServerResponse<Integer> updateOilCost(@RequestBody String oilCostStr) {
-        log.info("insert oil cost : [{}]", oilCostStr);
+        log.info("update oil cost : [{}]", oilCostStr);
         JSONObject jsonObject = JSONObject.parseObject(oilCostStr);
         OilCost oc = new OilCost();
         oc.setCost(jsonObject.getDouble("cost"));

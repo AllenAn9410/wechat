@@ -4,7 +4,6 @@ import cn.anx.serve.entity.wechat.OilCost;
 import cn.anx.serve.mapper.OilCostMapper;
 import cn.anx.serve.service.wechat.IOilCostService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.extension.service.additional.query.impl.QueryChainWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
